@@ -105,10 +105,10 @@
                 document.getElementById('tela' + i).style.display = 'none';
             }
 
-            // Não precisa de verificação para a tela 1 ou tela 4
+            // Não precisa de verificação para a tela 1
             if (tela === 2) {
                 // Verificar se o campo de nome foi preenchido
-                if (!document.getElementById('nome').value.trim()) {
+                if (!document.getElementById('nome').value.trim() && tela !== 1) {
                     alert("Por favor, preencha seu nome!");
                     return;
                 }
